@@ -1,0 +1,13 @@
+<template>
+  <lightning-card title="Basic Information">
+    <lightning-button label="Update" onclick={updateParent} slot="actions"></lightning-button>
+
+    <p class="slds-p-horizontal_small">
+      <lightning-input type="text" label="First Name" name="fname" onchange={handleFormInputChange}></lightning-input>
+      <lightning-input type="text" label="Last Name" name="lname" onchange={handleFormInputChange}></lightning-input>
+      <lightning-input type="text" label="Age" name="age" onchange={handleFormInputChange}></lightning-input>
+    </p>
+
+    <p slot="footer">Custom Event Example</p>
+  </lightning-card>
+</template>
